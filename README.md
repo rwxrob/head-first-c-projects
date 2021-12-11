@@ -1,5 +1,7 @@
 # Head First C Projects
 
+
+
 ## Chapter Zero
 
 Get on a Linux (Bash) command line. I chose to just use my PopOS
@@ -15,11 +17,14 @@ export CFLAGS="-Wall -Wextra -Werror"
 
 I went ahead and added these to `~/.bashrc`.
 
+We'll be following [Linux Kernel coding style][style]
+
+[style]: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
+
 ## Chapter One
 
 I wrote all this code out in an file and ran it first. Then answered the
-questions.
+questions. See the files associated with it.
 
 
-1. Assigns the number 11 to the variable `card_count`
-1. Checks the value of `card_count` to see if greater than 10 
+
