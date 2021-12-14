@@ -1,6 +1,11 @@
 # Head First C Projects
 
-
+> ⚠️ 
+> I was reminded that the definitive source for all C documentation is
+> in the `man` pages. For example, there is no explanation of the `atoi`
+> before it is first used, but knowing that anything in the book is also
+> covered in more depth in the Manual will help get over this missing
+> information (without having to search the Internet).
 
 ## Chapter Zero
 
@@ -20,11 +25,3 @@ I went ahead and added these to `~/.bashrc`.
 We'll be following [Linux Kernel coding style][style]
 
 [style]: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
-
-## Chapter One
-
-I wrote all this code out in an file and ran it first. Then answered the
-questions. See the files associated with it.
-
-
-
