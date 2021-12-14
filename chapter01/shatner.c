@@ -13,4 +13,5 @@ int main() {
         char * foo = "spock";
         // BAD: foo[0] = 'S';
         printf("%c",*(foo+2));
+        return 0;
 }

@@ -17,4 +17,5 @@ main()
     default:
         puts("Spades");
     }
+    return 0;
 }

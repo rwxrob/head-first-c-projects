@@ -6,4 +6,5 @@ int main() {
     puts("Enter ex's name:");
     scanf("%19s", ex);
     printf("Adios, %s.\n\nNice knowing you.\n", ex);
+    return 0;
 }
