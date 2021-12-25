@@ -25,3 +25,8 @@ I went ahead and added these to `~/.bashrc`.
 We'll be following [Linux Kernel coding style][style]
 
 [style]: <https://www.kernel.org/doc/html/v4.10/process/coding-style.html>
+
+## Related
+
+* Compiler Explorer  
+  <https://godbolt.org/>
