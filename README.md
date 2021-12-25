@@ -17,7 +17,7 @@ I set the `CFLAGS` so that `make` works by default without a `Makefile`
 at the moment:
 
 ```bash
-export CFLAGS="-Wall -Wextra -Werror"
+export CFLAGS="-Wall -Wextra -Werror -O0 -g -fsanitize=address -fno-omit-frame-pointer -finstrument-functions"
 ```
 
 I went ahead and added these to `~/.bashrc`.
