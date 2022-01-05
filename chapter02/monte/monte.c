@@ -3,26 +3,17 @@
 int main()
 {
 
-        // ALWAYS USE A CHARACTER ARRAY IF YOU PLAN ON CHANGING ANY OF
-        // THE INDIVIDUAL ARRAY VALUES EVEN THOUGH USING A STRING
-        // LITERAL INSTEAD WILL FALSELY APPEAR TO ALLOW THE SAME THING.
-
-        // https://wiki.sei.cmu.edu/confluence/display/c/STR30-C.+Do+not+attempt+to+modify+string+literals
-
-        //const char *cards = "JQKA"; // NOT THE SAME THING AT ALL
-        //char cards[] = "JQKA"; // PROHIBITED BY CERT C RULE STR30-C 
-
-        char cards[] = {'J','Q','K','\0'};
-
-        // double const means 1) can't change the content pointed to
-        //                    2) can't change what the pointer points to
-        //const char * const cards = "JQK";
-
-        //printf("%c\n",cards[1]);
-        //printf("%s %li\n",cards,sizeof(cards));
-        cards[2] = 'P';
-        printf("%s\n",cards);
-
-
+        //char * cards = "JQK";              // WRONG: compiles, but BOOM
+        //const char * const cards = "JQK";  // WRONG: won't compile
+        //char cards[] = {'J','Q','K'};      // WRONG: puts() segfaults
+        //char cards[] = {'J','Q','K','\0'}; // fine, verbose
+        char cards[] = "JQK";                // fine, copies string lit
+        char a_card = cards[2];
+        cards[2] = cards[1];
+        cards[1] = cards[0];
+        cards[0] = cards[2];
+        cards[2] = cards[1];
+        cards[1] = a_card;
+        puts(cards);
         return 0;
 }
