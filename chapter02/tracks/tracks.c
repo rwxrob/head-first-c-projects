@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char tracks[][80] = {
+char *tracks[] = {
         "What Have I Done to Deserve This",
         "Kiss Them For Me",
         "Blister in the Sun",
@@ -12,7 +12,7 @@ char tracks[][80] = {
         "Ну Что Же! 💢",
 };
 
-void find_track(char str[])
+void find_track(char *str)
 {
         int i;
         for (i = 0; i < 5; i++) {
